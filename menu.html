@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Mezbaan-Turkish-Italian Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/mazbaan-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: "Playwrite Italia Moderna";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* outline: 2px solid red; */
+        border: none;
+        /* background-color: #102b2a; */
+        /* background-color: #001526; */
+    }
+
+    body {
+        background-color: #001526;
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: 11vh;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom-color: #b58c67;
+        padding-left: 0px;
+        padding-right: 0px;
+        /* border-bottom-color: rgb(181, 140, 103); */
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        background-color: #001526;
+        z-index: 2;
+    }
+
+
+    .nav-bar img {
+        height: 62px;
+        padding-left: 22px;
+    }
+
+
+
+    div.container {
+        font-family: "Playwrite IT Moderna";
+        margin: 0 auto;
+        /* padding: 10em 3em; */
+        text-align: center;
+        left: 27%;
+        top: 23px;
+        position: absolute;
+    }
+
+    div.container a {
+        color: #FFF;
+        text-decoration: none;
+        font: 20px;
+        margin: 0px 10px;
+        padding: 10px 10px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+    }
+
+    div.borderXwidth a:before,
+    div.borderXwidth a:after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background: #FFF;
+        transition: all 0.3s;
+    }
+
+    div.borderXwidth a:before {
+        left: 0px;
+        top: 0px;
+    }
+
+    div.borderXwidth a:after {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    div.borderXwidth a:hover:before,
+    div.borderXwidth a:hover:after {
+        opacity: 1;
+        width: 100%;
+    }
+
+
+
+.clr{
+    clear: both;
+}
+.gallery{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 7%;
+}
+.gallery h1{
+    letter-spacing: 4px;
+    font-family:  "Playwrite ES Deco", cursive;
+    color: #b58c67;
+}
+label{
+    width: 15%;
+    display: inline-block;
+    border: 2px solid #b58c67;
+    letter-spacing: 2px;
+    padding: 18px 0;
+    margin: 0 8px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+   color: #b58c67;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]:checked + label{
+    background:#1f2732 ;
+    color:#fff;
+}
+input[type="radio"][id="veg"]:checked ~ .nonveg,
+input[type="radio"][id="veg"]:checked ~ .dessert,
+input[type="radio"][id="veg"]:checked ~ .juice
+{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .8s;
+}
+input[type="radio"][id="nonveg"]:checked ~ .veg,
+input[type="radio"][id="nonveg"]:checked ~ .dessert,
+input[type="radio"][id="nonveg"]:checked ~ .juice
+{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .8s;
+}
+input[type="radio"][id="juice"]:checked ~ .nonveg,
+input[type="radio"][id="juice"]:checked ~ .dessert,
+input[type="radio"][id="juice"]:checked ~ .veg
+{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .8s;
+}
+input[type="radio"][id="dessert"]:checked ~ .nonveg,
+input[type="radio"][id="dessert"]:checked ~ .veg,
+input[type="radio"][id="dessert"]:checked ~ .juice
+{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .8s;
+}
+.images{
+    width: 17%;
+    height: 259px;
+    float: left;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+    border-color: 2px solid #b58c67;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    border-radius: 12%;
+    border: 2px solid #b58c67;
+    
+}
+.images img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    overflow:hidden;
+    border: 2px solid #b58c67;
+}
+@media screen and (max-width:430px){
+  .container{
+    display: none;
+  }
+  label{
+    padding: 0;
+    border: none;
+    margin-top: 2px;
+  }
+  .images {
+    width: 23%;
+    height: 162px;
+}
+}
+@media screen and (min-width:550px) and (max-width:1030px){
+  .nav-bar{
+    height: 7vh;
+    width: 100%
+  }
+  .gallery {
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+    <!-- *****NavBar***** -->
+    <header>
+        <section class="nav-bar">
+            <div class="nav-links">
+                <img src="images/mezbaan-logo.png" alt="">
+                <div class="container green borderXwidth">
+                    <a href="index.html"> HOME </a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="team.html">OUR TEAM</a>
+                    <a href="">CONTACT</a>
+                </div>
+                <nav role='navigation'>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+    
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="aboutus.html"><li>AboutUs</li></a>
+                            <a href="menu.html"><li>Menu</li></a>
+                            <a href="team.html"><li>OurTeam</li></a>
+                            <a href="#"><li>Contact</li></a>
+                          </ul>
+                        </div>
+                      </nav>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- *****GALLERY***** -->
+    <div class="gallery">
+        <h1>Menu</h1>
+        <input type="radio" id="reset" checked="checked" name="food" />
+        <label for="reset">ALL</label>
+        <input type="radio" id="veg" name="food" />
+        <label for="veg">VEG</label>
+        <input type="radio" id="nonveg" name="food" />
+        <label for="nonveg">NON-VEG</label>
+        <input type="radio" id="juice" name="food" />
+        <label for="juice">JUICE</label>
+        <input type="radio" id="dessert" name="food" />
+        <label for="dessert">DESSERT</label>
+        <div class="clr"></div>
+       
+        <div class="images veg"><img src="images/veg4.jpg" alt=""></div>
+        <div class="images nonveg"><img src="images/n-veg3.jpg" alt=""></div>
+        <div class="images nonveg"><img src="images/n-veg4.jpg" alt=""></div>
+        <div class="images veg"><img src="images/veg5.jpg" alt=""></div>
+        <div class="images juice"><img src="images/juice.jpg" alt=""></div>
+        <div class="images dessert"><img src="images/dessert1.jpg" alt=""></div>
+        <div class="images juice"><img src="images/juice1.jpg" alt=""></div>
+
+        <div class="images veg"><img src="images/veg6.jpg" alt=""></div>
+        <div class="images veg"><img src="images/veg3.jpg" alt=""></div>
+        <div class="images juice"><img src="images/juice2.jpg" alt=""></div>
+        <div class="images juice"><img src="images/juice4.jpg" alt=""></div>
+        <div class="images dessert"><img src="images/dessert2.jpg" alt=""></div>
+        <div class="images nonveg"><img src="images/n-veg3.jpg" alt=""></div>
+        <div class="images nonveg"><img src="images/n-veg4.jpg" alt=""></div>
+        <div class="images dessert"><img src="images/dessert3.jpg" alt=""></div>
+        <div class="images dessert"><img src="images/dessert4.jpg" alt=""></div>
+        <div class="images nonveg"><img src="images/n-veg5.jpg" alt=""></div>
+        <div class="images nonveg"><img src="images/n-veg2.jpg" alt=""></div>
+        <div class="images dessert"><img src="images/dessert5.jpg" alt=""></div>
+        <div class="images dessert"><img src="images/dessert6.jpg" alt=""></div>
+</body>
+</div>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezbaan-Turkish-Italian Cuisine</title>
+    <link rel="icon" type="image/x-icon" href="images/mazbaan-favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+      /* ***** testimonials *****  */
+
+      #testimonials {
+  padding: 5rem 0;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #b58c67;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+.menu--bottom--right {
+  .menuToggle {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    input {
+      right: 50px;
+      bottom: 50px;
+      top: auto;
+      &:checked ~ .menuItem {
+        transform: scale(1);
+        /* // -webkit-transition: -webkit-transform .3s,visibility 0s 0s;
+        // -moz-transition: -moz-transform .3s,visibility 0s 0s;
+        // transition: transform .3s,visibility 0s 0s; */
+        li {
+          &:nth-child(1) {
+            -webkit-animation: text-slide-in .2s;
+            -moz-animation: text-slide-in .2s;
+            animation: text-slide-in .2s;
+          }
+          &:nth-child(2) {
+            -webkit-animation: text-slide-in .3s;
+            -moz-animation: text-slide-in .3s;
+            animation: text-slide-in .3s;
+          }
+          &:nth-child(3) {
+            -webkit-animation: text-slide-in .4s;
+            -moz-animation: text-slide-in .4s;
+            animation: text-slide-in .4s;
+          }
+          &:nth-child(4) {
+            -webkit-animation: text-slide-in .5s;
+            -moz-animation: text-slide-in .5s;
+            animation: text-slide-in .5s;
+          }
+          &:nth-child(5) {
+            -webkit-animation: text-slide-in .6s;
+            -moz-animation: text-slide-in .6s;
+            animation: text-slide-in .6s;
+          }
+        }
+      }
+    }
+    span {
+      right: 50px;
+      bottom: 50px;
+      top: auto;
+    }
+  }
+  .menuItem {
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    transform-origin: bottom right;
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .3s,visibility 0s 0s;
+    -moz-transition: -moz-transform .3s,visibility 0s 0s;
+    transition: transform .3s,visibility 0s 0s;
+    li {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      a {
+        &:hover {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:550px){
+    .testimonial-container{
+       padding: 4rem;
+       font-size: 2.4rem;
+       display: flex;
+       width: 100%;
+    }
+    .footer-content{
+        padding: 0;
+    }
+}
+@media screen and (min-width:550px) and (max-width:1030px){
+  .footer-content{
+    padding: 0px;
+  }
+}
+</style>
+<body>
+      <!-- *****NavBar***** -->
+      <header>
+        <div class="nav-bar">
+            <div class="nav-links">
+                <img src="images/mezbaan-logo.png" alt="">
+                <div class="container green borderXwidth">
+                    <a href="index.html"> HOME </a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="team.html">OUR TEAM</a>
+                    <a href="">CONTACT</a>
+                </div>
+            </div>
+            <nav role='navigation'>
+              <div id="menuToggle">
+                  <input type="checkbox" />
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                      <a href="index.html"><li>Home</li></a>
+                      <a href="aboutus.html"><li>AboutUs</li></a>
+                      <a href="menu.html"><li>Menu</li></a>
+                      <a href="team.html"><li>OurTeam</li></a>
+                      <a href="#"><li>Contact</li></a>
+                    </ul>
+                  </div>
+                </nav>
+        </div>
+    </header>
+
+
+
+
+
+     <!-- ***** testimonials ***** -->
+
+
+     <section id="testimonials">
+        <h2 class="testimonial-title"></h2>
+        <div class="testimonial-container container-content">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+                        <p class="customer-name">Ross Lee</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    voluptas cupiditate aspernatur odit doloribus non.
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+                        <p class="customer-name">Amelia Watson</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    voluptas cupiditate aspernatur odit doloribus non.
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                        <p class="customer-name">Ben Roy</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    voluptas cupiditate aspernatur odit doloribus non.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+     <section id="testimonials">
+        
+        <div class="testimonial-container container-content">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+                        <p class="customer-name">Ross Lee</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    voluptas cupiditate aspernatur odit doloribus non.
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                        <p class="customer-name">Amelia Watson</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    voluptas cupiditate aspernatur odit doloribus non.
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+                        <p class="customer-name">Ben Roy</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    voluptas cupiditate aspernatur odit doloribus non.
+                </p>
+
+            </div>
+        </div>
+    </section> 
+
+
+    <!-- ***** footer ***** -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Mezbaan-Turkish-Italian Cuisine</p>
+            <p> #6, Old Post Office Road, Behind sub-register office, Ambur <a href="#">+91 9256748924</a>, <a href="#"></a></p>
+            </p> Open: 10:00 am – 11:00 pm</p>
+        </div>
+    </footer>
+</body>
+</html>
