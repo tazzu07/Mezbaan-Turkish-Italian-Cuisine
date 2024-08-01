@@ -103,121 +103,110 @@
       scale: 1;
     }
   }
-      /* *****Ham Burger ***** */
-      a
-{
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
 
-a:hover
-{
-  color: white;
-}
-
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 28px;
-  right: 50px;
-  z-index: 1;
-  
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0; 
-  z-index: 2; 
-}
-
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  /* background: #cdcdcd; */
-  background-color: #C49871;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background:#C49871;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-  background-color: rgba(255, 255, 255, 0.2);
-backdrop-filter: blur(10px);
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-  opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  #menu {
-    transform: none;
-    opacity: 0;
-
-    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  /* *****Ham Burger ***** */
+  a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
   }
-}
+
+  a:hover {
+    color: white;
+  }
+
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    z-index: 1;
+
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    /* background: #cdcdcd; */
+    background-color: #C49871;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #C49871;
+  }
+
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  #menuToggle input:checked~ul {
+    transform: none;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    #menu {
+      transform: none;
+      opacity: 0;
+
+      transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+  }
 
 
 
@@ -381,9 +370,9 @@ backdrop-filter: blur(10px);
       left: calc(var(--width) * -1);
     }
   }
-      
 
-   /* ***** Top Pick*****  */
+
+  /* ***** Top Pick*****  */
 
   .pop {
     display: flex;
@@ -446,106 +435,9 @@ backdrop-filter: blur(10px);
     flex: 2;
   }
 
-      /* ***** Our Chef's***** */
-
-  .chef-con {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 550px;
-    
-  }
-
-  .chef1 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #C49871;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    clip-path: inset(-100vw 0 0 0 round 50%);
-    border: 6px solid rgb(234, 234, 234);
-  }
-
-  .chef2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #C49871;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    clip-path: inset(-100vw 0 0 0 round 50%);
-    border: 6px solid rgb(234, 234, 234);
-  }
-
-  .chef3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #C49871;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    clip-path: inset(-100vw 0 0 0 round 50%);
-    border: 6px solid rgb(234, 234, 234);
-  }
-
-  .chef1 {
-    left: 17%;
-  }
-
-  .chef2 {
-    left: 80%;
-  }
-
-  .chef3 {
-    left: 50%;
-  }
-
-  .chef1 img {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 100%;
-    height: auto;
-    transition: transform .2s ease;
-  }
-
-  .chef2 img {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 100%;
-    height: auto;
-    transition: transform .2s ease;
-  }
-
-  .chef3 img {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 100%;
-    height: auto;
-    transition: transform .2s ease;
-  }
-
-  .chef1:hover img {
-    transform: translate(-50%, -50%) scale(1.3);
-  }
+  /* ***** Our Chef's***** */
 
 
-  .chef2:hover img {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-
-  .chef3:hover img {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
 
 
 
@@ -611,155 +503,290 @@ backdrop-filter: blur(10px);
   }
 
 
-   /* ***** footer *****  */
+  /* ***** footer *****  */
 
- .footer{
-  position: relative;
-  display: flex;
-  width: 100%;
-}
-.footer-content{
-  position: absolute;
-  align-content: center;
-  padding: 4rem 22rem;
-  font-size: 20px;
-font-weight: 400;
-color: #b58c67;
-text-align: center;
-font-family: "Playwrite IT Moderna";
-}
-
-
-    /* ***** Media Query **** */
-    @media screen and (max-width:430px){
-      .gallery-container{
-        display: flex;
-        margin-left: -44%;
-        padding: 0;
-      }
-      .container{
-        display: none;
-      }
-      .footer-content{
-        padding: 0;
-      }
-      .chef-con{
-        flex-wrap: wrap;
-      }
-      .pop{
-        padding-top: 0;
-      }
-      .dish h1{
-        font-size: 31px;
-    line-height: 7px;
-      }
-      .chef-con{
-        display: none;
-      }
-      .gallery-card1{
-        width: 159px;
-        height: 126px;
-      }
-      .gallery-card1 img{
-        width: 159px;
-        height: 126px;
-      }
-      .gallery-card2{
-        width: 123px;
-        height: 125px;
-      }
-      .gallery-card2 video{
-        width: 123px;
-        height: 125px;
-      }
-      .gallery-card3{
-        width: 145px;
-        height: 119px;
-        margin-left: 20px;
-      }
-     .gallery-card3 p{
-      font-size: 23px;
-     }
-      .gallery-card3 img{
-        width: 145px;
-        height: 137px;
-      }
-      .gallery-content img {
-    padding-left: 0px;
-    }
-  
-    }
-
-    @media screen and (min-width:450px) and (max-width:780px){
-      .nav-bar{
-    height: 7vh;
-    width: 100%
+  .footer {
+    position: relative;
+    display: flex;
+    width: 100%;
   }
-  .showcase-area {
-    height: 39vh;
-    width: 122%;
+
+  .footer-content {
+    position: absolute;
+    align-content: center;
+    padding: 4rem 22rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: #b58c67;
+    text-align: center;
+    font-family: "Playwrite IT Moderna";
+  }
+
+
+  /* ***** Media Query **** */
+  @media screen and (max-width:380px) {
+    .gallery-container {
+      display: flex !important;
+      margin-left: -43% !important;
+      padding: 0;
     }
+  }
+  @media screen and (max-width:430px) {
+    .gallery-container {
+      display: flex;
+      margin-left: -35%;
+      padding: 0;
+    }
+
+    .container {
+      display: none;
+    }
+
+    .footer-content {
+      padding: 0;
+      font-size: 13px;
+    }
+
+    .pop {
+      padding-top: 0;
+    }
+
+    .dish h1 {
+      font-size: 31px;
+      line-height: 7px;
+    }
+
+    .gallery-card1 {
+      width: 159px;
+      height: 126px;
+    }
+
+    .gallery-card1 img {
+      width: 159px;
+      height: 126px;
+    }
+
+    .gallery-card2 {
+      width: 123px;
+      height: 125px;
+    }
+
+    .gallery-card2 video {
+      width: 123px;
+      height: 125px;
+    }
+
+    .gallery-card3 {
+      width: 145px;
+      height: 119px;
+      margin-left: 20px;
+    }
+
+    .gallery-card3 p {
+      font-size: 23px;
+    }
+
+    .gallery-card3 img {
+      width: 145px;
+      height: 137px;
+    }
+
+    .gallery-content img {
+      padding-left: 0px;
+    }
+
+    .hero {
+      display: none;
+    }
+
+    .hero .content {
+      display: none;
+    }
+
+   
+.cardss {
+    display: none !important;
+}
+
+    .card:hover {
+      flex: 4;
+    }
+
+  }
+
+  @media screen and (min-width:450px) and (max-width:780px) {
+    .nav-bar {
+      height: 7vh;
+      width: 100%
+    }
+
+    .showcase-area {
+      height: 39vh;
+      width: 122%;
+    }
+
     .slider {
       width: 127%;
     }
+
     .gallery {
       width: 121%;
     }
-    .pop{
+
+    .pop {
       width: 121%;
     }
-    .chef3 {
-    left: 59%;
-}
-.chef2{
-  left: 100%;
-}
-.footer-content{
-    padding: 0;
-    padding-left: 27%;
-  }
-}
-  @media screen and (min-width:790px) and (max-width:920px){
-  .nav-bar{
-    height: 7vh;
-    width: 100%
-  }
-  .footer-content{
-    padding: 0;
-  }
-  .showcase-area {
-    height: 39vh;
-    width: 100%;
+
+
+    .footer-content {
+      padding: 0;
+      padding-left: 27%;
     }
-    .gallery-container{
-      padding-left:0px;
+  }
+
+  @media screen and (min-width:790px) and (max-width:920px) {
+    .nav-bar {
+      height: 7vh;
+      width: 100%
+    }
+
+    .footer-content {
+      padding: 0;
+    }
+
+    .showcase-area {
+      height: 39vh;
+      width: 100%;
+    }
+
+    .gallery-container {
+      padding-left: 0px;
       margin-left: -10%;
     }
 
-}
-@media screen and (min-width:920px) and (max-width:1030px){
-  .nav-bar{
-    height: 7vh;
-    width: 100%
-  }
-  .gallery-container{
-      padding-left:0px;
+    div .container {
+      left: 17%;
     }
-    .footer-content{
-    padding: 0;
-    margin-left: 12%;
   }
-  .showcase-area {
-    height: 36vh;
+
+  @media screen and (min-width:920px) and (max-width:1030px) {
+    .nav-bar {
+      height: 5vh;
+      width: 100%
+    }
+
+    .gallery-container {
+      padding-left: 0px;
+    }
+
+    .footer-content {
+      padding: 0;
+      margin-left: 12%;
+    }
+
+    .showcase-area {
+      height: 36vh;
+    }
   }
-}
-@media screen and (min-width:440px) and (max-width:545px){
-  .footer-content{
-    padding: 0;
-    margin-left: 12%;
-    width: 120%;
+
+  @media screen and (min-width:440px) and (max-width:545px) {
+    .footer-content {
+      padding: 0;
+      margin-left: 12%;
+      width: 120%;
+    }
   }
-}
+
+  .hero {
+
+    display: flex;
+    align-items: center;
+    /* height: calc(100vh - 12vh); */
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero .content {
+    flex: 1;
+    margin-top: 8rem;
+  }
+
+  .hero .cardss {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    flex: 2;
+  }
+
+  .cardss .card-c {
+    width: 100%;
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+  }
+
+  .content h1 {
+    color: white;
+    font-size: 3.3rem;
+    line-height: 4.3rem;
+    text-transform: capitalize;
+  }
+
+  .content p {
+    color: #b58c67;
+    font-size: 1.1rem;
+    max-width: 85%;
+    margin: 1.8rem 0;
+  }
+
+  .content button {
+    background-color: rgb(19, 19, 37);
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border: none;
+    transition: .5s ease-in-out;
+  }
+
+  .content button:hover {
+    background-color: #924d37;
+    cursor: pointer;
+  }
+
+  .card-c:nth-child(1) {
+    margin-top: 6rem;
+    background-image: url(images/chef_1.jpg);
+  }
+
+  .card-c:nth-child(2) {
+    margin-top: 3rem;
+    background-image: url(images/chef_2.png);
+  }
+
+  .card-c:nth-child(3) {
+    background-image: url(images/chef_3.jpg);
+  }
+
+  .card-c::before {
+    content: attr(card_num);
+    position: absolute;
+    color: #fff;
+    right: 0;
+
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .footer-content a {
+    color: #b58c67;
+  }
+
+  .content a {
+    color: #fff;
+  }
 </style>
 
 <body>
@@ -778,20 +805,30 @@ font-family: "Playwrite IT Moderna";
       </div>
       <nav role='navigation'>
         <div id="menuToggle">
-            <input type="checkbox" />
+          <input type="checkbox" />
 
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="aboutus.html"><li>AboutUs</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="team.html"><li>OurTeam</li></a>
-                <a href="#"><li>Contact</li></a>
-              </ul>
-            </div>
-          </nav>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html">
+              <li>Home</li>
+            </a>
+            <a href="aboutus.html">
+              <li>AboutUs</li>
+            </a>
+            <a href="menu.html">
+              <li>Menu</li>
+            </a>
+            <a href="team.html">
+              <li>OurTeam</li>
+            </a>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -800,7 +837,6 @@ font-family: "Playwrite IT Moderna";
 
   <section class="showcase-area" id="showcase">
     <div class="showcase-container">
-    
     </div>
   </section>
 
@@ -859,7 +895,7 @@ font-family: "Playwrite IT Moderna";
   </main>
 
 
-     <!-- ***** Top Pick***** -->
+  <!-- ***** Top Pick***** -->
 
   <div class="pop">
     <div class="dish">
@@ -904,30 +940,22 @@ font-family: "Playwrite IT Moderna";
     </div>
   </div>
 
-       <!-- *****Our Chef's ***** -->
+  <!-- *****Our Chef's ***** -->
 
 
-  <div class="pop">
-    <div class="dish">
-      <h1>~~~~~ OUR CHEF'S ~~~~~</h1>
+  <section class="hero">
+    <div class="content">
+      <h1> Our Chef's</h1>
+      <p> Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nisi nobis laudantium expedita quasi!</p>
+      <button> <a href="team.html">learn more</a></button>
     </div>
-  </div>
-
-
-
-  <div class="chef-con">
-    <div class="chef1">
-      <img src="images/chef1.png" alt="">
+    <div class="cardss">
+      <div class="card-c" card_num="01"></div>
+      <div class="card-c" card_num="02"></div>
+      <div class="card-c" card_num="03"></div>
     </div>
-    <div class="chef2">
-      <img src="images/chef2.png" alt="">
-    </div>
-    <div class="chef3">
-      <img src="images/chef3.png" alt="">
-    </div>
-  </div>
-
-
+  </section>
 
 
 
@@ -952,11 +980,12 @@ font-family: "Playwrite IT Moderna";
   <!-- ***** footer ***** -->
   <footer class="footer">
     <div class="footer-content">
-        <p>Mezbaan-Turkish-Italian Cuisine</p>
-        <p> #6, Old Post Office Road, Behind sub-register office, Ambur <a href="#">+91 9256748924</a>, <a href="#"></a></p>
-        </p> Open: 10:00 am – 11:00 pm</p>
+      <p>Mezbaan-Turkish-Italian Cuisine</p>
+      <p> #6, Old Post Office Road, Behind sub-register office, Ambur <a href="#">+91 9256748924</a>, <a href="#"></a>
+      </p>
+      </p> Open: 10:00 am – 11:00 pm</p>
     </div>
-</footer>
+  </footer>
 
 </body>
 

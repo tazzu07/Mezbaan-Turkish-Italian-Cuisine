@@ -107,7 +107,7 @@
   {
     display: block;
     position: absolute;
-    top: 28px;
+    top: 23px;
     right: 50px;
     z-index: 1;
     
@@ -532,7 +532,7 @@
   
   .photo-album .img5 {
     bottom: 0;
-    right: 0;
+    right: 6px;
     -webkit-transform: rotate(1deg);
     -moz-transform: rotate(1deg);
     transform: rotate(1deg);
@@ -556,7 +556,7 @@
   
   .photo-album .img8 {
     bottom: -20px;
-    left: 700px;
+    left: 696px;
     -webkit-transform: rotate(-8deg);
     -moz-transform: rotate(-8deg);
     transform: rotate(-8deg);
@@ -580,7 +580,7 @@
   
   .photo-album .img11 {
     top: 0;
-    right: 0;
+    right: 7px;
     -webkit-transform: rotate(-8deg);
     -moz-transform: rotate(-8deg);
     transform: rotate(-8deg);
@@ -750,37 +750,98 @@
   text-align: center;
   font-family: "Playwrite IT Moderna";
   }
-  
-  
+  .footer-content a{
+    color:#b58c67 ;
+  }
+  .album {
+    height: 90vh;
+    background:
+      url("images/photo-album.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .poloried-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+  }
+
   
     @media screen and (max-width:430px){
     .container{
       display: none;
     }
+    .nav-bar{
+      height: 8vh;
+    }
     .img-container{
-      width: 219%;
+      /* width: 219%; */
+      height: 50vh;
     } 
-    .about{
-      width: 201%;
-      margin-top: 24%;
-      padding: 0;
+    .about h2{
+      /* width: 201%; */
+      /* margin-top: 24%;
+      padding: 0; */
+      font-size: 12px;
+    }
+
+    .about p{
+      font-size: 20px;
     }
     .gallery-container{
-      width: 144%;
-      height: 365px;
+      /* width: 144%;
+      height: 365px; */
+      flex-direction: column;
+      height: 158vh;
     } 
+    .gallery-content2{
+      left: 73%;
+    }
     .showcase-area{
-      width: 215%
+      /* width: 215% */
+      height: 29vh;
+    }
+    .rate-us-contant{
+      width: 100%;
+      font-size: 15px;
     }
     .footer-content{
-      padding: 0;
-      width: 218%;
+      padding: 14px;
+      font-size: 12px;
+      /* width: 218%; */
+    }
+    .star-rating i{
+      font-size: 1.0em;
+    }
+    .rate-us h3{
+      font-size: 8px;
+    }
+    .rate-us p{
+      font-size: 37px;
+    }
+    .rate-us h2{
+      font-size: 13px;
+    }
+    .photo-album{
+      display: none;
+    }
+    .album{
+      width: 100%;
+      height: 30vh;
+    }
+    .gallery-card:nth-child(odd){
+      margin-top: -52px;
     }
   }   
   @media screen and (min-width:550px) and (max-width:780px){
     .nav-bar{
       height: 7vh;
-      width: 100%
+      /* width: 100% */
     }
     .img-container{
       width: 126%;
@@ -800,14 +861,17 @@
       padding: 0;
       padding-left: 27%;
     }
+    .album{
+      display:none;
+    }
   }
   @media screen and (min-width:790px) and (max-width:920px){
     .nav-bar{
-      height: 7vh;
-      width: 100%
+      height: 5vh;
     }
     .footer-content{
-      padding: 0;
+      padding: 16px;
+        margin-left: 42px;
     }
     .gallery-container{
       width: 71%;
@@ -815,11 +879,16 @@
     .showcase-area{
       height: 29vh;
     }
+    .album{
+      display: none;
+    }
+   div .container{
+      left: 17%;
+    }
   }
   @media screen and (min-width:920px) and (max-width:1030px){
     .nav-bar{
-      height: 7vh;
-      width: 100%
+      height: 5vh;
     }
     .gallery-container{
       width: 77%;
@@ -828,8 +897,11 @@
       height: 28vh;
     }
     .footer-content{
-      padding: 0;
+      padding: 16px;
       margin-left: 12%;
+    }
+    .album{
+      display: none;
     }
   }
   @media screen and (min-width:440px) and (max-width:545px){
@@ -837,6 +909,9 @@
       padding: 0;
       margin-left: 12%;
       width: 120%;
+    }
+    .nav-bar{
+      height: 9vh;
     }
     .img-container{
       width: 149%;
@@ -847,4 +922,27 @@
     .about{
       width: 150%;
     }
+    div .container{
+      left: 19%;
+    }
+    .album{
+      display: none;
+    }
   }
+  @media screen and (min-width:1030px){
+    .album{
+      display: none;
+    }
+  }
+  @media screen and (min-width:355px) and (max-width:380px){
+    .gallery-container{
+      flex-direction: column;
+      height: 199vh;
+  }
+  .nav-bar {
+    height: 10vh;
+}
+.rate-us-contant p{
+  margin-top: -33px;
+}
+}
