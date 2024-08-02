@@ -12,7 +12,6 @@
   /* ***** NavBar **** */
   .nav-bar {
     width: 100%;
-    height: 11vh;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +20,7 @@
     border-bottom-style: solid;
     padding-left: 0px;
     padding-right: 0px;
-    z-index: 2;
+    z-index: 1000;
     background-color: #001526;
   }
   
@@ -33,10 +32,9 @@
   div.container {
     margin: 0 auto;
     text-align: center;
-    left: 27%;
     top: 23px;
     position: absolute;
-   
+    width: 100%;
   }
   
   div.container a {
@@ -133,7 +131,6 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    /* background: #cdcdcd; */
     background-color: #C49871;
     border-radius: 3px;
     z-index: 1;
@@ -281,7 +278,6 @@
     margin-top: -26%;
   }
   .about h2 {
-    /* padding-top: 3rem; */
     font-weight: 300;
     color: #fff;
     font-size: 28px;
@@ -290,7 +286,6 @@
     text-align: center;
     word-wrap: break-word;
     text-transform: uppercase;
-   
   }
   
   .about h3 {
@@ -302,7 +297,6 @@
     text-align: center;
     word-wrap: break-word;
     text-transform: uppercase;
-   
   }
   
   .about p {
@@ -337,7 +331,6 @@
   .gallery-card img {
     display: block;
     max-width: 100%;
-    height: 100%;
     object-fit: cover;
     border: 2px solid #b58c67;
   }
@@ -357,7 +350,6 @@
     width: 70px;
     height: 60px;
     top: -20px;
-  
   }
   
   .gallery-content1 img {
@@ -366,7 +358,6 @@
   }
   
   .gallery-content2 {
-  
     position: relative;
     width: 80px;
     height: 85px;
@@ -394,7 +385,6 @@
     width: 172px;
     border: 1px solid #BFBFBF;
     background-color: white;
-    /* z-index: 2; */
     font-size: 0.7em;
     -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -621,7 +611,6 @@
   /* ***** Rate Us***** */
   
   .showcase-area {
-    height: 50vh;
     background:
       url("images/bk1.jpg");
     background-size: cover;
@@ -635,7 +624,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     font-size: 1.6rem;
   }
   
@@ -695,13 +683,11 @@
   }
   
   .rate-us-contant img{
-    height: 77px;
     width: 98px;
     color: #C49871;
     margin-top: -26%;
   }
   .rate-us h2 {
-    /* padding-top: 3rem; */
     font-weight: 300;
     color: #fff;
     font-size: 28px;
@@ -749,12 +735,12 @@
   color: #b58c67;
   text-align: center;
   font-family: "Playwrite IT Moderna";
+  width: 100%;
   }
   .footer-content a{
     color:#b58c67 ;
   }
   .album {
-    height: 90vh;
     background:
       url("images/photo-album.png");
     background-size: cover;
@@ -776,35 +762,21 @@
     .container{
       display: none;
     }
-    .nav-bar{
-      height: 8vh;
-    }
     .img-container{
-      /* width: 219%; */
       height: 50vh;
     } 
     .about h2{
-      /* width: 201%; */
-      /* margin-top: 24%;
-      padding: 0; */
       font-size: 12px;
     }
-
     .about p{
       font-size: 20px;
     }
     .gallery-container{
-      /* width: 144%;
-      height: 365px; */
       flex-direction: column;
       height: 158vh;
     } 
     .gallery-content2{
       left: 73%;
-    }
-    .showcase-area{
-      /* width: 215% */
-      height: 29vh;
     }
     .rate-us-contant{
       width: 100%;
@@ -813,7 +785,6 @@
     .footer-content{
       padding: 14px;
       font-size: 12px;
-      /* width: 218%; */
     }
     .star-rating i{
       font-size: 1.0em;
@@ -839,10 +810,6 @@
     }
   }   
   @media screen and (min-width:550px) and (max-width:780px){
-    .nav-bar{
-      height: 7vh;
-      /* width: 100% */
-    }
     .img-container{
       width: 126%;
     } 
@@ -854,7 +821,6 @@
       width: 131%;
     }
     .showcase-area{
-      height: 39vh;
       width: 126%;
     }
     .footer-content{
@@ -864,44 +830,41 @@
     .album{
       display:none;
     }
+    .gallery-content2{
+      bottom: 289px;
+    }
   }
   @media screen and (min-width:790px) and (max-width:920px){
-    .nav-bar{
-      height: 5vh;
-    }
+    
     .footer-content{
       padding: 16px;
-        margin-left: 42px;
+      
     }
     .gallery-container{
       width: 71%;
     }
-    .showcase-area{
-      height: 29vh;
-    }
+
     .album{
       display: none;
     }
-   div .container{
-      left: 17%;
+    .gallery-content2{
+      bottom: 263px;
     }
   }
-  @media screen and (min-width:920px) and (max-width:1030px){
-    .nav-bar{
-      height: 5vh;
-    }
+  @media screen and (min-width:920px) {
+   
     .gallery-container{
       width: 77%;
     }
-    .showcase-area{
-      height: 28vh;
-    }
-    .footer-content{
-      padding: 16px;
-      margin-left: 12%;
-    }
+
     .album{
       display: none;
+    }
+    .gallery-content2{
+      bottom: 217px;
+    }
+    .footer-content{
+      padding: 0;
     }
   }
   @media screen and (min-width:440px) and (max-width:545px){
@@ -910,9 +873,7 @@
       margin-left: 12%;
       width: 120%;
     }
-    .nav-bar{
-      height: 9vh;
-    }
+
     .img-container{
       width: 149%;
     }
@@ -921,9 +882,6 @@
     }
     .about{
       width: 150%;
-    }
-    div .container{
-      left: 19%;
     }
     .album{
       display: none;
@@ -939,9 +897,7 @@
       flex-direction: column;
       height: 199vh;
   }
-  .nav-bar {
-    height: 10vh;
-}
+ 
 .rate-us-contant p{
   margin-top: -33px;
 }
