@@ -75,18 +75,7 @@
     width: 100%;
   }
   
-   /* div.borderXwidth a:active{
-   left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    content: '';
-    background: #FFF;
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-  } */
+ 
   
   @keyframes appear {
     from {
