@@ -22,13 +22,17 @@
 
   #testimonials {
     padding-top: 1rem ;
+    width: 80%;
+    margin: auto;
+    margin-top: 78px;
   }
 
   .testimonial-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 400;
-    color: #555;
+    color:#b58c67;
+    padding: 10px;
   }
 
   .testimonial-container {
@@ -36,6 +40,7 @@
     justify-content: space-between;
     font-size: 1.4rem;
     padding: 1rem;
+    gap: 74px;
   }
 
   .testimonial-box .checked {
@@ -49,9 +54,28 @@
 
   .testimonial-box {
     text-align: center;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
+    border: 1px solid #b58c67;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 400px;
+    height: 500px;
   }
-
+  /* .testimonial-box :hover{
+  .customer-photo img{
+    border-radius: 20%;
+  } 
+  } */
+  
+.testimonial-box:hover .customer-photo img {
+  border-radius: 0%;
+}
+.testimonial-box:hover ,
+.testimonial-box:focus .testimonial-box {
+  transform: translateY(-60px);
+}
   .customer-photo img {
     display: block;
     width: 150px;
@@ -66,7 +90,9 @@
     color: #fff;
   }
 
-
+  .customer-photo p{
+    margin-top: 12px;
+  }
 
 
 
@@ -191,7 +217,7 @@
           <a href="aboutus.html">ABOUT US</a>
           <a href="menu.html">MENU</a>
           <a href="team.html">OUR TEAM</a>
-          <a href="">CONTACT</a>
+          <a href="contact.html">CONTACT</a>
         </div>
       </div>
       <nav role='navigation'>
@@ -214,7 +240,7 @@
             <a href="team.html">
               <li>OurTeam</li>
             </a>
-            <a href="#">
+            <a href="contact.html">
               <li>Contact</li>
             </a>
           </ul>
@@ -229,9 +255,9 @@
 
   <!-- ***** testimonials ***** -->
 
-
+  <h2 class="testimonial-title"> Meet Our Team</h2>
   <section id="testimonials">
-    <h2 class="testimonial-title"></h2>
+    
     <div class="testimonial-container container-content">
       <div class="testimonial-box">
         <div class="customer-detail">

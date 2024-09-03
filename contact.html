@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezbaan-Turkish-Italian Cuisine</title>
+    <link rel="icon" type="image/x-icon" href="images/mazbaan-favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 92%;
+        gap: 2rem;
+        margin: 0 auto;
+        padding: 2rem;
+        height: 600px;
+        font-family: "Playwrite IT Moderna";
+        color: #c9ab81;
+    }
+
+    .video {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+    @media screen and (max-width: 850px) {
+        img {
+        height: 558px;
+    }
+}
+    img {
+        height: 644px;
+    }
+
+    .written {
+        width: 50%;
+        height: 100%;
+        border: 1px solid #fbf8f4;
+        padding: 4rem;
+        position: relative;
+    }
+
+    h2#find {
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #c9ab81;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p#add {
+        padding: 2em;
+        text-align: center;
+        font-size: 20px;
+        line-height: 36px;
+        word-wrap: break-word;
+    }
+
+    h2#open {
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    h2#table {
+        font-family: "Mrs Saint Delafield", cursive;
+        color: #c9ab81;
+        text-align: center;
+        font-size: 33px;
+        letter-spacing: 5px;
+        font-weight: 550;
+    }
+
+    h2#reser {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #c9ab81;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 6px;
+    }
+
+    .main {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+        padding-bottom: 10em;
+        margin: 0 auto;
+        justify-content: space-between;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 29px;
+        color: #fff;
+        letter-spacing: 0;
+        text-transform: none;
+    }
+
+    .input {
+        width: 20%;
+    }
+
+    input {
+        background: transparent;
+        border: 1px solid #c9ab81;
+        color: #c6c1bb;
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+        padding: 19px 18px;
+    }
+
+    input:focus {
+        border: 2px solid #c9ab81;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgb(240, 232, 232);
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator,
+    input[type="time"]::-webkit-calendar-picker-indicator {
+        color: #282726;
+        background-color: #d0c7a3;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+
+    input[type="button"]:hover {
+
+        transform: scale(1.05);
+        background-color: #c6c1bb;
+        color: black;
+        font-weight: 400;
+        text-decoration: rgb(142, 30, 30);
+    }
+
+    .wrapper-content {
+        padding: 5rem;
+    }
+
+
+    @media screen and (max-width: 550px) {
+        .contact {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+
+
+
+
+
+    @media screen and (max-width:990px) {
+        .input {
+            width: 23%;
+        }
+
+        .main {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+
+        .video,
+        .written {
+            width: 92% !important;
+        }
+    }
+    @media screen and (max-width: 850px) {
+    .about {
+        width: 95%;
+        padding: 6rem 0 0 0;
+        height: 100%;
+    }
+}
+    @media screen and (max-width:850px) {
+
+
+.video{
+    height: 378px;
+}
+
+        .main {
+            flex-wrap: wrap;
+            padding: 0;
+
+        }
+
+        .input {
+
+            flex: 1 1 45%;
+            padding: 10px;
+        }
+
+        .contact {
+            width: 95%;
+            padding: 6rem 0 0 0;
+            height: 100%;
+        }
+
+        video {
+            height: 100%;
+        }
+
+        .written {
+            padding: 0 2rem;
+        }
+
+        h2#find {
+            font-size: 2rem;
+            padding-top: 16px;
+        }
+
+        p#add,
+        p {
+            font-size: 18px;
+            padding: 0;
+        }
+
+        h2#open {
+            font-size: 15px;
+        }
+
+
+
+        h2#reser {
+            font-size: 2rem;
+        }
+
+
+    }
+
+    @media screen and (max-width:700px) {
+
+
+        .written {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+
+
+        .wrapper-content {
+            padding: 2rem;
+        }
+
+
+
+        .contact {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .video,
+        .written {
+            width: 92%;
+        }
+
+
+
+    }
+
+    @media screen and (max-width:450px) {}
+
+    @media screen and (max-width:350px) {
+
+
+
+
+
+        .image {
+            padding: 0;
+        }
+
+     
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: none;
+        }
+
+
+        p {
+            padding: 11px;
+        }
+
+
+
+        .main {
+            width: 95%;
+        }
+
+        .input {
+            flex: 1 1 51%;
+        }
+
+        .video,
+        .written {
+            width: 100%;
+        }
+
+
+
+
+    }
+
+
+  
+
+
+    
+</style>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-links">
+                <img src="images/mezbaan-logo.png" alt="">
+                <div class="container green borderXwidth">
+                    <a href="index.html" class="active"> HOME </a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="team.html">OUR TEAM</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+            <nav role='navigation'>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="aboutus.html">
+                            <li>AboutUs</li>
+                        </a>
+                        <a href="menu.html">
+                            <li>Menu</li>
+                        </a>
+                        <a href="team.html">
+                            <li>OurTeam</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <div class="contact">
+        <div class="video">
+            <!-- <video src="images/card2.mp4" autoplay
+                muted loop width="100%" height="100%"></video> -->
+            <img src="images/dish1.jpg" alt="">
+        </div>
+        <div class="written">
+
+            <h2 id="open">OPENING HOURS:</h2>
+            <p>Weekdays: 10.00 am – 10:00 pm</p>
+            <p>Weekend: 10:00 am – 12:00 pm</p>
+            <p id="add">Mezbaan-Turkish-Italian Cuisine</p>
+            <p> #6, Old Post Office Road, Behind sub-register office, Ambur <a href="#" style="color:#c9ab81 ;">+91
+                    9256748924</a></p>
+
+
+        </div>
+    </div>
+    <div class="wrapper-content">
+        <h2 id="table">Your Table</h2>
+        <h2 id="reser">reservation</h2>
+    </div>
+    <div class="main">
+        <div class="input">
+            <input type="text" class="text" placeholder="1 People" required>
+        </div>
+        <div class="input">
+            <input type="date" class="date" required>
+        </div>
+        <div class="input">
+            <input type="time" class="time" required>
+        </div>
+        <div class="input">
+            <a href="#"><input type="button" value="Book Now" class="button"></a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Mezbaan-Turkish-Italian Cuisine</p>
+            <p> #6, Old Post Office Road, Behind sub-register office, Ambur <a href="#">+91 9256748924</a>, <a
+                    href="#"></a></p>
+            </p> Open: 10:00 am – 11:00 pm</p>
+        </div>
+    </footer>
+</body>
+
+</html>
