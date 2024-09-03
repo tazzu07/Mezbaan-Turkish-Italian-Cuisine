@@ -51,9 +51,16 @@
     cursor: pointer;
   }
   .containerr{
-    display: flex;
-    align-content: flex-end;
-    
+    top: 23px;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+  
+  }
+  .containerr i{
+    color: white;
+    font-size: 20px;
+    padding: 0px 16px;
   }
   div.borderXwidth a:before,
   div.borderXwidth a:after {
