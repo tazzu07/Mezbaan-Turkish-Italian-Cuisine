@@ -11,11 +11,11 @@
   
   /* ***** NavBar **** */
   .nav{
-    position: sticky;
+    /* position: sticky; */
 }
   .nav-bar {
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     border-bottom-color: #b58c67;
@@ -866,7 +866,7 @@
     }
     .footer-content{
       padding: 0;
-      padding-left: 27%;
+      /* padding-left: 27%; */
     }
     .album{
       display:none;
@@ -951,7 +951,15 @@
   margin-top: -33px;
 }
 }
-
+@media screen and (min-width:1910px){
+  .card img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/ 1;
+}
+}
 
 ::-webkit-scrollbar{
   width: 10px;

@@ -16,6 +16,10 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
     rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 </head>
 <style>
   /* ***** testimonials *****  */
@@ -33,6 +37,8 @@
     font-weight: 400;
     color:#b58c67;
     padding: 10px;
+    padding-top: 100px;
+    font-family: "Cookie", system-ui;
   }
 
   .testimonial-container {
@@ -71,11 +77,16 @@
   
 .testimonial-box:hover .customer-photo img {
   border-radius: 0%;
+  transition: all .5s;
 }
 .testimonial-box:hover ,
 .testimonial-box:focus .testimonial-box {
-  transform: translateY(-60px);
+  /* transform: translateY(-60px); */
+  box-shadow: 0 2rem 2rem #b58c67;
+      transform: translateY(-20px);
+      transition: all .5s;
 }
+
   .customer-photo img {
     display: block;
     width: 150px;
@@ -201,8 +212,17 @@
       padding: 0px;
     }
     div.container{
-      left:15%;
+      /* left:15%; */
     }
+    #testimonials {
+    padding-top: 1rem;
+    width: auto;
+    margin: 0;
+    margin-top: 30px;
+}
+.testimonial-box{
+  height: auto;
+}
   }
 </style>
 
