@@ -50,18 +50,7 @@
     z-index: 0;
     cursor: pointer;
   }
-  .containerr{
-    top: 23px;
-    position: absolute;
-    width: 100%;
-    text-align: right;
   
-  }
-  .containerr i{
-    color: white;
-    font-size: 20px;
-    padding: 0px 16px;
-  }
   div.borderXwidth a:before,
   div.borderXwidth a:after {
     position: absolute;
@@ -84,21 +73,19 @@
   }
   
   div.borderXwidth a:hover:before,
-  div.borderXwidth a:hover:after {
+  div.borderXwidth a:hover:after ,
+  div.borderXwidth a:active{
     opacity: 1;
     width: 100%;
   }
   
-  div.borderXwidth > a.active > a{
-    position: absolute;
+  div.borderXwidth > a.active a{
+   
     opacity: 0;
-    content: '';
     background: #FFF;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    
+    width: 0%;
+    height: 2px;
+    z-index: 1;
   }
   
   @keyframes appear {
