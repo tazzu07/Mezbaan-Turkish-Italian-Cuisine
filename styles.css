@@ -13,6 +13,9 @@
   .nav{
     /* position: sticky; */
 }
+.active{
+  color:#b58c67 !important;
+}
   .nav-bar {
     width: 100%;
     position: fixed;
@@ -50,6 +53,13 @@
     z-index: 0;
     cursor: pointer;
   }
+
+  
+div.borderXwidth a:active:before, div.borderXwidth a:active:after, div.borderXwidth a:active {
+  opacity: 1;
+  width: 100%;
+}
+
   
   div.borderXwidth a:before,
   div.borderXwidth a:after {
