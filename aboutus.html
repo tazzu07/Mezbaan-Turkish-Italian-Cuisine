@@ -27,6 +27,30 @@
   body {
     background-color: #032030;
   }
+  div.borderXwidth a.active:before,
+div.borderXwidth a.active:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
+}
+div.borderXwidth a.active:before {
+  left: 0px;
+  top: 0px;
+}
+div.borderXwidth a.active:after {
+  right: 0px;
+  bottom: 0px;
+}
+div.borderXwidth a.active:before,
+div.borderXwidth a.active:after ,
+div.borderXwidth a:active{
+  opacity: 1;
+  width: 100%;
+}
 
   /* ***** NavBar **** */
   .nav-bar {
@@ -95,7 +119,9 @@
     width: 100%;
   }
 
-
+  /* .active{
+  color:#b58c67 !important;
+} */
   @keyframes appear {
     from {
       opacity: 0;
@@ -728,8 +754,17 @@
       margin-left: 12%;
       width: 120%;
     }
+    
   }
-
+  @media screen and (min-width:1900px) and (max-width:1950px){
+    .card img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2 / 1;
+}
+  }
   .hero {
 
     display: flex;
